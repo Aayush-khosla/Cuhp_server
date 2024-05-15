@@ -34,6 +34,10 @@ app.use(require("./router/authRoutes"));
 app.use(require("./router/bookingRoutes"));
 app.use(require("./router/hallRoutes"));
 
+app.get("/",(req,res)=>{
+  res.send("Welcome to Cuhp Server")
+})
+
 // Connect to MongoDB
 connectDB();
 
